@@ -1,0 +1,598 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1a1a1a;
+}
+.logo img {
+    width: 165px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.links ul {
+    list-style: none;
+}
+.links ul li {
+    display: inline-block;
+    color: white;
+    padding-right: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.links ul li:hover {
+    color: red;
+}
+.btn {
+    display: flex;
+    gap: 12px;
+}
+/* ==========================================
+   UPDATED BUTTON STYLES (Clean & Modern)
+   ========================================== */
+
+/* 1. Header Buttons */
+.btn-one {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-one:hover {
+    background-color: white;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.btn-two {
+    background-color: #e60000;
+    border: 2px solid #e60000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-two i {
+    background-color: white;
+    color: #e60000;
+    padding: 6px;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-size: 11px;
+    transition: transform 0.3s ease;
+}
+
+.btn-two:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(230, 0, 0, 0.4);
+}
+
+.btn-two:hover i {
+    transform: translateX(4px);
+}
+
+/* 2. Brand Section Buttons (.button1, .button2, .button3, .button4) */
+.button1, .button2, .button3, .button4 {
+    background-color: #000000;
+    border: 2px solid #000000;
+    color: #ffffff;
+    padding: 11px 0;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover {
+    background-color: #e60000;
+    border-color: #e60000;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(230, 0, 0, 0.3);
+}
+
+/* 3. Direction Buttons (.dir-btn aur .direction-btn) */
+.dir-btn, .direction-btn {
+    background-color: transparent;
+    border: 1px solid #e60000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.dir-btn i, .direction-btn i {
+    background-color: #e60000;
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dir-btn:hover, .direction-btn:hover {
+    background-color: #e60000;
+    color: #ffffff;
+    border-color: #e60000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(230, 0, 0, 0.3);
+}
+
+.dir-btn:hover i, .direction-btn:hover i {
+    background-color: #ffffff;
+    color: #e60000;
+    transform: translateX(4px);
+}
+/* Section 1 */
+.section-one img {
+    width: 100%;
+    display: block;
+}
+
+/* section 2 */
+.section-two {
+    background-color: #000000;
+    padding: 70px 20px 90px 20px;
+    text-align: center;
+}
+
+.section-two .main-text p {
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.section-two .main-text .sub-heading {
+    margin-top: 5px;
+}
+
+.section-two .main-text .brand-desc {
+    font-size: 15px;
+    color: #b0b0b0;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.sapan {
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.brands-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 260px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 230px;
+}
+
+.box img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.button1 {
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.button2 {
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.button3 {
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+.button4 {
+    background-color: transparent;
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button1:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+.button2:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+.button3:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+.button4:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+/* section 3 start */
+.section3, .section4, .section5 {
+    background-color: #0000009f;
+    padding: 60px 40px;
+    text-align: center;
+    border-top: 1px solid #151515;
+}
+.headings {
+    color: white;
+    font-family: "Playfair Display", sans-serif;
+    margin-bottom: 50px;
+}
+.headings h1 {
+    font-size: 38px;
+}
+.headings h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.headings p {
+    font-size: 15px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.img-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.bhawalpur-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.bhawalpur-row img {
+    width: 450px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.faislabad-row img {
+    width: 450px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.bhawalpur-img img {
+    text-align: left;
+    max-width: 400px;
+}
+
+.franchise-info p {
+    font-size: 14px;
+    color: #bbb;
+}
+.city-tag {
+    color: #ff3b3b;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+}
+.franchise-info h3 {
+    font-size: 28px;
+    font-family: "Playfair Display", sans-serif;
+    margin: 10px 0;
+}
+.direction-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.direction-btn i {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 50%;
+}
+.direction-btn:hover {
+    background-color: transparent;
+    color: rgb(7, 7, 7);
+    background-color: green;
+}
+
+/* Express Section Grid Layout (Columns) */
+.express-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.express-card {
+    background-color: #0b0b0b;
+    border: 1px solid #1c1c1c;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.express-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.express-card .city-tag {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.express-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.express-card p {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.express-card .dir-btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+.express-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.express-card .city-tag {
+    display: block;
+    margin-bottom: 5px;
+}
+.express-card h3 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.express-card p {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+/* section4 */
+.section4 {
+    background-color: #0b0b0b;
+      border: 1px solid #1c1c1c;
+      left: 9px;
+      right: 20px;
+      padding: 25px;    
+ } 
+.salt-n-pepper .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+.direction-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    transition: background-color green 0.3s, color 0.3s;
+}
+/* Opening Soon Grid */
+.opening-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.opening-card {
+    background-color: white;
+    color: black;
+    width: 320px;
+    padding: 35px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.pin-icon {
+    font-size: 30px;
+    color: #ff3b3b;
+    margin-bottom: 15px;
+}
+.opening-tag {
+    color: #ff3b3b;
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+.opening-card h3 {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.opening-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.footer {
+    background-color: #080808;
+    color: #999;
+    padding: 60px 40px 30px 40px;
+    border-top: 1px solid #1c1c1c;
+    font-size: 14px;
+    line-height: 1.6;
+    height: auto; /* Removed fixed height restriction */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    text-align: left;
+}
+
+.footer p {
+    color: #aaa;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.footer h3, 
+.footer h4, 
+.footer h5 {
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.footer h5 {
+    font-size: 15px;
+    margin-top: 15px;
+    color: #ddd;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 13px;
+}
+
+.footer ul li a:hover {
+    color: #e60000;
+}
